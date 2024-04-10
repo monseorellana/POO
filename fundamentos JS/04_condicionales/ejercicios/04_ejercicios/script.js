@@ -17,5 +17,3 @@ function identificarNumero() {
 
     document.getElementById('lista').innerHTML = resultado;
 }
-git config--global user.email "monserratorellana@liceovvh.cl"
-git config--global user.name "monseorellana"
