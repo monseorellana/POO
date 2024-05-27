@@ -1,10 +1,9 @@
-function increment() {
-    let contador = 0;
-    let array = [];
-
-    while (contador <= 100) {
-        array.push(contador);
-        contador += 5;
+function numerosCreciendo(){
+    let contador = 0
+    let Array = []
+    while(contador <= 100){
+        Array.push(contador)
+        contador += 5
     }
-    document.getElementById('lista').innerHTML = `<p>Cuenta de 0 a 100 de 5 en 5: </p>`
+    document.getElementById("lista").innerHTML = `<h2>Numeros del 0 al 100: <br>${Array}</h2>`
 }
