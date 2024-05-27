@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,10 +32,18 @@
 </div>
     </section>
     <section class="container mt-5">
-        <h1>Ejercicio Ejemplo</h1>
-        <p>Ejercicio: Numero Mayor</p>
-        <button class="btn btn-danger" onclick="Verificar()">Bucle For</button>
-        <div id="lista" class="container mt-3">
+        <div class="form-group mt-3">
+            <h1>Tabla multiplicar</h1>
+            <p>Imprimir tablas de multiplicar de numeros ingresados en campos InputText</p>
+            <form>
+                <label for="InputText">Ingrese los numeros para trabajar</label>
+                <input id="InputText" type="text" class="form-control mt-3" placeholder="Ingresar un valor numerico">
+            </form>
+            <button class="btn btn-danger mt-3" onclick="TraerTablas()">Bucle For</button>
+            <div class="container mt-3">
+                <ul id="lista">
+                </ul>
+            </div>
         </div>
     </section>
     <script src="script.js"></script>

@@ -1,10 +1,16 @@
-function numMayor() {
-    let arrayNum = [];
-    let numeroMayor = 0;
-    for (let i = 0; i < 5; i++) {
-        let num = parseInt(prompt("ingrese un numero para determinar mayor : "));
-        arrayNum.push(num);
-        numeroMayor = (numeroMayor < num) ? num : numeroMayor;
+function Verificar(){
+    let numeroMayor = 0
+    let array = []
+
+    for(let i = 0; i < 5; i++){
+        let numero = parseInt(prompt("Ingrese el numero " + i + ":"))
+        array.push(numero)
+        /*
+        if (numeroMayor < numero){
+            numeroMayor = numero }else{
+                numeroMayor = numeroMayor
+        }*/
+        numeroMayor = (numeroMayor < numero) ? num : numeroMayor
     }
-    document.getElementById("lista").innerHTML = `de los numeros ingresados:${arrayNum.join(",")} numero mayor: <h1>${numeroMayor}</h1>`
+document.getElementById(`lista`).innerHTML = `<p>${array.join(", ")} el numero mayor es: <h1>${numeroMayor}</h1></p>`
 }
